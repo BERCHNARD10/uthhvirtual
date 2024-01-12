@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/BERCHNARD10/uthhvirtual.git/static/css/main.dde4f7eb.css",
+    "main.js": "/BERCHNARD10/uthhvirtual.git/static/js/main.29d72b82.js",
+    "static/js/787.807b23da.chunk.js": "/BERCHNARD10/uthhvirtual.git/static/js/787.807b23da.chunk.js",
+    "static/media/main-logo.png": "/BERCHNARD10/uthhvirtual.git/static/media/main-logo.578d8834b9876f80f47c.png",
+    "static/media/secondary-logo.png": "/BERCHNARD10/uthhvirtual.git/static/media/secondary-logo.3024b583aad40a514faa.png",
+    "static/media/home-img.png": "/BERCHNARD10/uthhvirtual.git/static/media/home-img.235633fdf85a75c1d6a8.png",
+    "index.html": "/BERCHNARD10/uthhvirtual.git/index.html",
+    "main.dde4f7eb.css.map": "/BERCHNARD10/uthhvirtual.git/static/css/main.dde4f7eb.css.map",
+    "main.29d72b82.js.map": "/BERCHNARD10/uthhvirtual.git/static/js/main.29d72b82.js.map",
+    "787.807b23da.chunk.js.map": "/BERCHNARD10/uthhvirtual.git/static/js/787.807b23da.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dde4f7eb.css",
+    "static/js/main.29d72b82.js"
+  ]
+}
