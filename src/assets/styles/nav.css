@@ -1,0 +1,10 @@
+@media (min-width: 1200px) {
+    .navbar-nav .nav-link {
+        width: 33.33%;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link.no-width {
+        width: auto; 
+    }
+}

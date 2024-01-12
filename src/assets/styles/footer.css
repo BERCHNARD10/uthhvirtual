@@ -1,0 +1,16 @@
+.link {
+    color: rgba(255, 255, 255, 0.563);
+    transition: color 0.3s ease-in-out;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    color: #00883e;
+  }
+  
+  .icon-with-circle {
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.2em;
+    margin-right: 0.2em; 
+  }

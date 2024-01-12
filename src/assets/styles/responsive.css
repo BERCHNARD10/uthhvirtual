@@ -1,0 +1,21 @@
+
+/* Estilos para pantallas grandes (computadoras) */
+@media (min-width: 1200px) 
+{
+    .navbar-nav .nav-link {
+        width: 33.33%;
+        text-align: center; 
+    }
+}
+
+/* Estilos para tabletas */
+@media (min-width: 768px) and (max-width: 991px) 
+{
+    /* Agrega estilos específicos para tabletas aquí */
+}
+
+/* Estilos para teléfonos celulares */
+@media (max-width: 767px) 
+{
+    /* Agrega estilos específicos para teléfonos celulares aquí */
+}
