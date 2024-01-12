@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const PrivacyPolicy = () => {
   return (
     <div className="container mt-5">
-        <h1>Términos y Condiciones</h1>
+        <h1>Términos yy Condiciones</h1>
         <p>Universidad Tecnológica de la Huasteca Hidalguense, UTHH, con domicilio en Chalahuiyapa S/N, Colonia Tepoxteco, Huejutla de Reyes, Huejutla de Reyes, CP. 43000, Hidalgo, México, es el responsable del tratamiento de los datos personales que nos proporcione, los cuales serán protegidos conforme a lo dispuesto por la Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados, y demás normatividad que resulte aplicable.</p>
 
         <h5>Plataforma de Evaluación Educativa</h5>

@@ -32,7 +32,7 @@ const HomePage = () => {
               backgroundColor: '#00883e',
               borderColor: '#00883e',
               })}>
-                Iniciar sesión en el aula
+                Iniciar sesión en el Aula Virtual
             </Button>
           </Col>
           <Col md={6} className="mx-auto">
