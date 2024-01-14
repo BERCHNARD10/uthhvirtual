@@ -50,7 +50,6 @@ return (
                                 className="form-control"
                                 id="firstName"
                                 name="firstName"
-                                placeholder="Matricula"
                                 required
                                 />
                             </div>
@@ -68,7 +67,6 @@ return (
                                 className="form-control"
                                 id="lastName"
                                 name="lastName"
-                                placeholder="Apellido Paterno"
                                 required
                                 />
                             </div>
@@ -88,7 +86,6 @@ return (
                                 className="form-control"
                                 id="firstName"
                                 name="firstName"
-                                placeholder="Nombre"
                                 required
                                 />
                             </div>
@@ -106,7 +103,6 @@ return (
                                 className="form-control"
                                 id="lastName"
                                 name="lastName"
-                                placeholder="Apellido Paterno"
                                 required
                                 />
                             </div>
@@ -124,12 +120,11 @@ return (
                         className="form-control"
                         id="password"
                         name="password"
-                        placeholder="Ingresa tu Contraseña"
                         required
                         />
                     </div>
                 </div>
-                <b><h6 htmlFor="password">Contraseña</h6></b>
+                <b><h6 htmlFor="password">Repite la Contraseña</h6></b>
                 <div className="input-group">
                     <div>
                         <i className="fas fa-lock"><RiLockPasswordLine /></i>
@@ -140,7 +135,6 @@ return (
                         className="form-control"
                         id="password"
                         name="password"
-                        placeholder="Ingresa tu Contraseña"
                         required
                         />
                     </div>
