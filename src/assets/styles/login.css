@@ -3,20 +3,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /*height: 80vh;*/
-  height: 100vh;
+  /* height: 80vh; */
+  /* height: 80vh; */
   margin: 0;
+  min-height: -webkit-fill-available;
+  min-width: max-content;
 }
 
 .login-container {
-  background-color: #f9f9f9;
-  padding: 30px;
+  background-color: #fff;
+  padding: 5%; /* Use percentage-based padding */
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 45vh;
-  text-align: center;
-  margin: 2rem 2rem 0 2rem;
 }
+
 
 .login-container img {
   width: 80px;
@@ -43,6 +42,8 @@
   box-sizing: border-box;
   border: 1px solid #b6b6b6;
   border-radius: 4px;
+  background-color: #f1f1f1;
+
 }
 
 .btn-login {
@@ -83,21 +84,23 @@ h6 {
   display: block;
   margin-bottom: 5px;
   font-family: 'Open Sans', sans-serif;
-  color: #b2b2b2;
+  color: #555;
   font-size: 14px;
   justify-content: start;
 }
 
 .form-check {
   text-align: left;
+  display: flex;
+  align-items: center;
+  gap: inherit;
 }
 
 .input-group input {
   padding-left: 40px;
   box-sizing: border-box;
-  border: 1px solid #b3b3b357;
+  border: 1px solid #b6b6b600;
   border-radius: 4px;
-  background-color: #f1f1f1;
 }
 .input-group {
   position: relative;
@@ -107,3 +110,291 @@ h6 {
   flex-direction: column;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+  box-sizing: border-box;
+}
+/*
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: #f3f3f7;
+}
+*/
+form {
+  display: grid;
+  gap: 1.5rem;
+  /*width: 100%;
+  max-width: 600px;  
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+}
+.header-form {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  line-height: 1.58334;
+}
+p{
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 0.46667;
+}
+.container{
+  min-width: 100%;
+  padding: 0 7%;
+}
+.user-data {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 100%; /* Ensure it takes up the full width */
+}
+
+.entryarea {
+  position: relative;
+  height: 65px; /* Ajustado para incluir espacio para mensajes de error */
+  line-height: 50px;
+}
+
+.entryarea-error {
+  height: 70px; /* Ajustado para incluir espacio para mensajes de error */
+  margin-top: 20px;
+}
+
+.input-field  {
+  max-width: 400px; /* O el valor que prefieras */
+  width: 100%;
+  padding: 10px 20px;
+  position: absolute;
+  min-width: 0;
+  width: 100%;
+  outline: none;
+  font-size: 1em; /* O el valor que prefieras */
+  /*padding: 0 30px;*/
+  line-height: 1.5em;
+  border-radius: 6px;
+  border: 1px solid #e2e2e2;
+  background: transparent;
+  transition: 0.1s ease;
+  z-index: 1111;
+  color: #666672;
+}
+
+.labelline {
+  position: absolute;
+  font-size: 0.9em;  
+  color: #a7a7b6;
+  /*padding: 0 25px;*/
+  margin: 0 20px;
+  background-color: #ffffff;
+  transition: 0.2s ease;
+  pointer-events: none;
+}
+
+.error-message {
+  position: absolute;
+  font-size: 13px;
+  color: red;
+  padding: 5px 4px;
+  background-color: #ffffff;
+  transition: 0.2s ease;
+  pointer-events: none;
+  transform: translateY(60%);
+  margin-top: 1rem;
+  line-height: 20px;
+}
+
+input:focus,
+.input:valid {
+  color: #666672;
+  border: 2px solid #7c919e;
+}
+
+input:focus + .labelline,
+input:valid + .labelline {
+  color: #7c919e;
+  width: max-content;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 12px;
+  transform: translate(-15px, -16px) scale(0.88);
+  z-index: 1111;
+}
+
+input:invalid + .error-message {
+  transform: translateY(0);
+}
+
+
+@media (min-width: 900px)
+{
+  form {
+    max-inline-size: unset;
+}
+}
+
+.entryarea {
+  position: relative;
+  height: 65px; /* Ajustado para incluir espacio para mensajes de error */
+  line-height: 50px;
+}
+
+.entryarea.has-error {
+  height: 90px; /* Ajuste adicional de altura cuando hay un error */
+}
+
+.input-error {
+  border-color: red; /* Cambia el borde del input en caso de error */
+}
+
+.error-message {
+  position: absolute;
+  font-size: 13px;
+  color: red;
+  /*padding: 10px 4px; /* Aumenta el espacio vertical */
+  background-color: white; /* Fondo blanco para mejorar la legibilidad */
+  transition: 0.2s ease;
+  pointer-events: none;
+  transform: translateY(120%); /* Ajusta la posición del mensaje de error */
+  margin-top: 0.5rem; /* Ajusta el margen superior para separarse del input */
+  line-height: 20px;
+}
+
+
+.input-error:focus + .labelline,
+.input-error:valid + .labelline {
+  color: red; /* Cambia el color del texto cuando hay un error */
+}
+
+.input:focus,
+.input:valid {
+  color: #666672;
+  border: 2px solid #e2e2e2; /* Restaura el color del borde cuando el input es válido */
+}
+
+.input:focus + .labelline,
+.input:valid + .labelline {
+  color: #a7a7b6;
+  width: max-content;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 12px;
+  transform: translate(-15px, -16px) scale(0.88);
+  z-index: 1111;
+}
+
+@media (min-width: 900px) {
+  form {
+    max-inline-size: unset;
+  }
+}
+
+
+.entryarea {
+  position: relative;
+  height: 65px; /* Ajustado para incluir espacio para mensajes de error */
+  line-height: 50px;
+  transition: height 0.2s ease; /* Agregado efecto de transición para suavizar el cambio de altura */
+}
+
+.entryarea.has-error {
+  height: 90px; /* Ajuste adicional de altura cuando hay un error */
+}
+
+.input-error {
+  border-color: red; /* Cambia el borde del input en caso de error */
+}
+
+.error-message {
+  position: absolute;
+  font-size: 13px;
+  color: red;
+  /*padding: 10px 4px; /* Aumenta el espacio vertical */
+  background-color: white; /* Fondo blanco para mejorar la legibilidad */
+  transition: 0.2s ease;
+  pointer-events: none;
+  transform: translateY(120%); /* Ajusta la posición del mensaje de error */
+  margin-top: 0.5rem; /* Ajusta el margen superior para separarse del input */
+  line-height: 20px;
+}
+
+.input-error:focus + .labelline,
+.input-error:valid + .labelline {
+  color: red; /* Cambia el color del texto cuando hay un error */
+}
+
+.input:focus,
+.input:valid {
+  color: #666672;
+  border: 2px solid #e2e2e2; /* Restaura el color del borde cuando el input es válido */
+}
+
+.input:focus + .labelline,
+.input:valid + .labelline {
+  color: #a7a7b6;
+  width: max-content;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 12px;
+  transform: translate(-15px, -16px) scale(0.88);
+  z-index: 1111;
+}
+
+@media (min-width: 900px) {
+  form {
+    max-inline-size: unset;
+  }
+}
+
+
+.btn-login {
+  background-color: #00883e;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  margin: 10px 0;
+}
+
+.btn-login:hover {
+  color: #fff;
+  background-color: #23262d;
+}
+
+
+.split-screen {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  flex: 1.5;
+  overflow: hidden;
+}
+
+.left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen para que cubra completamente el contenedor */
+}
+
+.right {
+  flex: 0.9 1;
+  background-color: #f4f4f4;
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+}
+
+.reCaptcha {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; /* Add margin for separation */
+}
