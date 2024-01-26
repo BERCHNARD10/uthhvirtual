@@ -1,6 +1,7 @@
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import HomeImg from '../assets/images/home-img.png';
 import React, { useState } from 'react';
+import ChatBox from './ChatBox';
 
 const HomePage = () => {
 
@@ -44,6 +45,7 @@ const HomePage = () => {
           </Col>
         </Row>
       </Container>
+      <ChatBox />
     </div>
   );
 };

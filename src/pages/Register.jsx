@@ -57,7 +57,7 @@ const onSubmit = async (data, event) => {
             console.log('Registro exitoso:', result);
         } else {
             console.error('Error en el registro:', result.message);
-
+            alert(result.message);
             if (result.debug_info) {
                 console.error('Información de depuración:', result.debug_info);
             }
@@ -99,7 +99,7 @@ return (
             >
                 <div className='header-form'>
                 <h4 className='MuiTypography-root MuiTypography-h4 mui-1xwxgjt'>La aventura comienza aquí 🚀</h4>
-                <p className='MuiTypography-root MuiTypography-body1 mbe-1 mui-3vvmsa'>¡Haz que tu aprendizaje sea fácil y divertido!</p>
+                <p className='MuiTypography-root MuiTypography-body1 mbe-1 mui-3vvmsa p-login-register'>¡Haz que tu aprendizaje sea fácil y divertido!</p>
                 </div>
                 <div className='conftainer'>
                 <div className='user-data'>

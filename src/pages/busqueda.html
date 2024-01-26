@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda de Calificaciones</title>
+</head>
+<body>
+
+    <h1>Búsqueda de Calificaciones</h1>
+
+    <form action="resultados_calificaciones.php" method="POST">
+        <label for="nombreAlumno">Nombre del Alumno:</label>
+        <input type="text" id="nombreAlumno" name="nombreAlumno" required>
+        <br>
+
+        <label for="materia">Materia:</label>
+        <select id="materia" name="materia" required>
+            <!-- Opciones de materias (pueden ser dinámicas desde la base de datos) -->
+            <option value="GAT001">GAT001</option>
+            <!-- Agrega más opciones según tus necesidades -->
+        </select>
+        <br>
+
+        <label for="parcial">Parcial:</label>
+        <select id="parcial" name="parcial" required>
+            <!-- Opciones de parciales (pueden ser dinámicas desde la base de datos) -->
+            <option value="1">Parcial 1</option>
+            <option value="2">Parcial 2</option>
+            <option value="3">Parcial 3</option>
+        </select>
+        <br>
+
+        <button type="submit">Buscar Calificaciones</button>
+    </form>
+
+</body>
+</html>

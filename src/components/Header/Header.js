@@ -46,11 +46,11 @@ const NavigationBar = () => {
             <Navbar.Collapse id="basic-navbar-nav" className="justify-content-between">
             <Nav className="ml-auto">
 
-            <Nav.Link href="#" className="d-inline no-width">
+            <Nav.Link href="/ResultadosCalificaciones" className="d-inline no-width">
                 Para DocenteS
             </Nav.Link>
             <NavDropdown title="Recursos" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#">Action</NavDropdown.Item>
+                <NavDropdown.Item href="/BusquedaAvanzada">Busqueda Avanzada</NavDropdown.Item>
                 <NavDropdown.Item href="#">Another action</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#">Something else</NavDropdown.Item>

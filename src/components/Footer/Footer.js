@@ -5,7 +5,7 @@ import { MdOutlineLocationOn, MdOutlineMailOutline  } from "react-icons/md";
 import { GoBook } from "react-icons/go";
 import { IoGameControllerOutline } from "react-icons/io5";
 import { RiGuideLine } from "react-icons/ri";
-
+import ChatBox from '../../pages/ChatBox';
 import SecondaryLogo from '../../assets/images/main-logo.png';
 import '../../assets/styles/footer.css';  
 

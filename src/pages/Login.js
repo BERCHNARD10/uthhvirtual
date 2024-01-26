@@ -4,13 +4,14 @@ import { RiLockPasswordLine } from "react-icons/ri";
 import { useForm } from 'react-hook-form';
 import ReCAPTCHA from "react-google-recaptcha";
 import SecondaryLogo from '../assets/images/secondary-logo.png';
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef} from 'react';
 import { FaEye } from "react-icons/fa";
 import '../assets/styles/login.css';  
+import { useNavigate, Link } from 'react-router-dom'; 
 
 
 const Login = () => {
-
+    const navigate = useNavigate();
     const [isLoading, setIsLoading] = useState(false);
     const [matriculaError, setMatriculaError] = useState(false);
     const [passwordError, setPasswordError] = useState(false);
@@ -48,7 +49,9 @@ const Login = () => {
     
         if (result.done) {
             console.log('Login exitoso:', result);
-        } else {
+            navigate('/ResultadosCalificaciones', { state: { username: result.userData.vchNombre } });
+          } else {
+            alert(result.message);
             console.error('Error en el registro:', result.message);
             if (result.debug_info) {
                 console.error('Información de depuración:', result.debug_info);
@@ -90,7 +93,7 @@ return (
             >
                 <div className='header-form'>
                 <h4 className='MuiTypography-root MuiTypography-h4 mui-1xwxgjt'>La aventura comienza aquí 🚀</h4>
-                <p className='MuiTypography-root MuiTypography-body1 mbe-1 mui-3vvmsa'>¡Haz que tu aprendizaje sea fácil y divertido!</p>
+                <p className='MuiTypography-root MuiTypography-body1 mbe-1 mui-3vvmsa p-login-register'>¡Haz que tu aprendizaje sea fácil y divertido!</p>
                 </div>
                 <div className='conftainer'>
 
@@ -138,6 +141,8 @@ return (
                     </div>
                     }
                 </div>
+                <Link to="/recuperarContrase%C3%B1a">¿Olvidaste tu contraseña?</Link>
+
                 <div className='reCaptcha'>
                     <ReCAPTCHA
                     ref={captcha}
